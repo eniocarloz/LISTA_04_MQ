@@ -42,8 +42,9 @@ gráfico com estimativas intervalares.
 hipotese a ser trabalhada: a intervenção estatal influencia na estimativa de produção.
 
 ```{r pressure, echo=TRUE}
-slice(dados_extrativismo) %>%
-   ggpubr::ggboxplot(x = "Variável", y = "Valor", fill="Variável")
+ggplot (dados_extrativismo) + 
+geom_bar(aes(x = "Variável", y = "Valor"))
+
 ```
 
 
